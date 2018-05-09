@@ -1,8 +1,18 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 class SimpleSlider extends Component {
+  constructor(){
+    super();
+    this.state = { expireTime:""}
+  }
+  componentDidMount(){
+    let { expireTime} = this.props;
+    setInterval(()=>{
+      let dateDiff = new Date(expireTime).toTimeString() - new Date().toTimeString();
+    },1000)
+  }
   getTimeRemail(expireTime) {
-    return <div className="timeRemail">{"10:15:20"}</div>
+    return <div className="timeRemail">{expireTime}</div>
   }
   render() {
     const settings = {
@@ -11,7 +21,8 @@ class SimpleSlider extends Component {
       slidesToShow: 3,
       slidesToScroll: 3
     };
-    let { images, siteURL, expireTime, buttonLabel } = this.props;
+    let { images, siteURL, buttonLabel } = this.props;
+    let { expireTime} = this.state;
     return (
       <div>
         <h4>Single Item</h4>
