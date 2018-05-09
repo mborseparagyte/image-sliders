@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Styles from "./styles.css";
 import flexboxgrid from "flexboxgrid";
 import SimpleSlider from "./simpleslider.js";
+import Featured from "./featured.js";
 const styles = {
   fontFamily: "sans-serif",
   textAlign: "center"
@@ -24,6 +25,7 @@ const images = [
 const App = () => (
   <div style={styles}>
     <SimpleSlider images={images} siteURL = {siteURL}/>
+    <Featured images={images} siteURL={siteURL}/>
   </div>
 );
 
