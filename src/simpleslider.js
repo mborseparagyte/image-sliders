@@ -3,7 +3,6 @@ import Slider from "react-slick";
 class SimpleSlider extends Component {
   render() {
     const settings = {
-      dots: true,
       infinite: true,
       autoplay: true,
       speed: 200,
@@ -19,8 +18,8 @@ class SimpleSlider extends Component {
             <Slider {...settings}>
               {images.map(image => {
                 return (
-                  <div>
-                    <img height="400px" alt="" src={`${siteURL}/${image}`} />
+                  <div className="simple-Slick-item">
+                    <img height="400px" width="100%" alt="" src={`${siteURL}/${image}`} />
                   </div>
                 );
               })}

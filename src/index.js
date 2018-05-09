@@ -25,7 +25,7 @@ const images = [
 const App = () => (
   <div style={styles}>
     <SimpleSlider images={images} siteURL = {siteURL}/>
-    <Featured images={images} siteURL={siteURL}/>
+    <Featured images={images} siteURL={siteURL} buttonLabel={"View All"}/>
   </div>
 );
 
