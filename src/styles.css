@@ -1,3 +1,6 @@
-.sliderparent{
-  width: 80%
+.sliderparent {
+  background: grey;
+}
+.sliderDiv {
+  width: 80%;
 }
