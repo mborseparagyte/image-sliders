@@ -1,23 +1,10 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import timediff from 'timediff';
 class SimpleSlider extends Component {
-  constructor(){
-    super();
-    this.state = { expireTime:""}
-  }
-  componentDidMount(){
-    let { expireTime} = this.props;
-    setInterval(()=>{
-    let dateDiff = timediff(new Date(), new Date(expireTime));
-    this.setState({ expireTime: `${dateDiff.hours} : ${dateDiff.minutes} : ${dateDiff.seconds}` })
-    },1000)
-  }
-  getTimeRemail(expireTime) {
-    return <div className="timeRemail">{expireTime}</div>
-  }
-  getItem(product){
-    let { siteURL} =this.props;
+ 
+
+  getItem(product) {
+    let { siteURL } = this.props;
     return <div className="multiTile-Slick-item">
       <img height="150px" width="100%" alt="" src={`${siteURL}/${product.image}`} />
       <div className='fea-product-title'> {product.title}</div>
@@ -33,18 +20,13 @@ class SimpleSlider extends Component {
       slidesToScroll: 3
     };
     let { images, siteURL, buttonLabel, sectionTitle } = this.props;
-    let { expireTime} = this.state;
     return (
       <div>
         <h4>Single Item</h4>
         <div className='row sliderparent'>
           <div className='col-xs-3 vertMiddle center-xs'>
-
             <div className=''>
               <div className='featuredTitle'> {sectionTitle}</div>
-              <div className=''>
-                {this.getTimeRemail(expireTime)}
-              </div>
               <div className=''>
                 <button type="button" class="btn btn-primary">{buttonLabel}</button>
               </div>

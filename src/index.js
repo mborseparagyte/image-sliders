@@ -7,6 +7,7 @@ import Styles from "./styles.css";
 import flexboxgrid from "flexboxgrid";
 import SimpleSlider from "./simpleslider.js";
 import Featured from "./featured.js";
+import Trending from "./trending.js";
 const styles = {
   fontFamily: "sans-serif",
   textAlign: "center"
@@ -27,9 +28,16 @@ const App = () => (
     <SimpleSlider images={images} siteURL={siteURL} />
     <Featured
       images={images}
+      sectionTitle ={"Deals of the Day"}
       siteURL={siteURL}
       buttonLabel={"View All"}
       expireTime={"2018-05-10T12:28:03.000Z"}
+    />
+    <Trending
+      sectionTitle = {"Trending Offers"}
+      images={images}
+      siteURL={siteURL}
+      buttonLabel={"View All"}
     />
   </div>
 );
