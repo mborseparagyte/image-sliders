@@ -16,13 +16,13 @@ class SimpleSlider extends Component {
   getTimeRemail(expireTime) {
     return <div className="timeRemail">{expireTime}</div>
   }
-  getItem(image){
+  getItem(product){
     let { siteURL} =this.props;
     return <div className="multiTile-Slick-item">
-      <img height="150px" width="100%" alt="" src={`${siteURL}/${image.image}`} />
-      <div className=''> </div>
-      <div className=''> </div>
-      <div className=''> </div>
+      <img height="150px" width="100%" alt="" src={`${siteURL}/${product.image}`} />
+      <div className='fea-product-title'> {product.title}</div>
+      <div className='fea-product-desc'> {product.description}</div>
+      <div className='fea-product-category'> {product.category}</div>
     </div>
   }
   render() {
