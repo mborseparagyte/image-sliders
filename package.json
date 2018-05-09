@@ -1,0 +1,23 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "flexboxgrid": "6.3.1",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-image-slideshow": "1.5.4",
+    "react-scripts": "1.1.4",
+    "react-slick": "0.23.1",
+    "slick-carousel": "1.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
