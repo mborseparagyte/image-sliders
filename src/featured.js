@@ -16,6 +16,15 @@ class SimpleSlider extends Component {
   getTimeRemail(expireTime) {
     return <div className="timeRemail">{expireTime}</div>
   }
+  getItem(image){
+    let { siteURL} =this.props;
+    return <div className="multiTile-Slick-item">
+      <img height="150px" width="100%" alt="" src={`${siteURL}/${image.image}`} />
+      <div className=''> </div>
+      <div className=''> </div>
+      <div className=''> </div>
+    </div>
+  }
   render() {
     const settings = {
       infinite: true,
@@ -48,9 +57,7 @@ class SimpleSlider extends Component {
                   {images.map(image => {
                     return (
                       <div >
-                        <div className="multiTile-Slick-item">
-                          <img height="200px" width="100%" alt="" src={`${siteURL}/${image}`} />
-                        </div>
+                        {this.getItem(image)}
                       </div>
                     );
                   })}

@@ -5,6 +5,7 @@
   width: 80%;
 }
 .multiTile-Slick-item{
+  height: 250px;
   padding:10px;
 }
 .simple-Slick-item{

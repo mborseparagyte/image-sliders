@@ -19,7 +19,7 @@ class SimpleSlider extends Component {
               {images.map(image => {
                 return (
                   <div className="simple-Slick-item">
-                    <img height="400px" width="100%" alt="" src={`${siteURL}/${image}`} />
+                    <img height="400px" width="100%" alt="" src={`${siteURL}/${image.image}`} />
                   </div>
                 );
               })}
