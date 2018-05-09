@@ -21,11 +21,16 @@ const images = [
     "images/slide_7.jpg"
   ],
   siteURL = `https://react-slideshow.herokuapp.com`;
-
+//expireTime in ISO string
 const App = () => (
   <div style={styles}>
-    <SimpleSlider images={images} siteURL = {siteURL}/>
-    <Featured images={images} siteURL={siteURL} buttonLabel={"View All"} expireTime={"2018-05-10T12:28:03.000Z"} /> //expireTime in ISO string
+    <SimpleSlider images={images} siteURL={siteURL} />
+    <Featured
+      images={images}
+      siteURL={siteURL}
+      buttonLabel={"View All"}
+      expireTime={"2018-05-10T12:28:03.000Z"}
+    />
   </div>
 );
 
