@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import timediff from 'timediff';
 class SimpleSlider extends Component {
   constructor(){
     super();
@@ -8,7 +9,8 @@ class SimpleSlider extends Component {
   componentDidMount(){
     let { expireTime} = this.props;
     setInterval(()=>{
-      let dateDiff = new Date(expireTime).toTimeString() - new Date().toTimeString();
+    let dateDiff = timediff(new Date(), new Date(expireTime));
+    this.setState({ expireTime: `${dateDiff.hours} : ${dateDiff.minutes} : ${dateDiff.seconds}` })
     },1000)
   }
   getTimeRemail(expireTime) {

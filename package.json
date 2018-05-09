@@ -11,7 +11,8 @@
     "react-image-slideshow": "1.5.4",
     "react-scripts": "1.1.4",
     "react-slick": "0.23.1",
-    "slick-carousel": "1.8.1"
+    "slick-carousel": "1.8.1",
+    "timediff": "1.1.1"
   },
   "devDependencies": {},
   "scripts": {
