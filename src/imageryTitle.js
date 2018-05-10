@@ -18,7 +18,7 @@ class ImageryTitle extends Component {
           <div className="row" style={{ margin: "0px 20px" }}>
             {images.map(image => {
               return (
-                <div className="col-xs imageryImg">
+                <div className="col-xs imageryImg pointer">
                   <img
                     height="250px"
                     width="100%"

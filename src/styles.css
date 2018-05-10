@@ -16,12 +16,14 @@ body{
   margin:10px;
     height: inherit;
     box-shadow: 0 4px 5px 0 rgba(173, 173, 173, 0.67), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 .multiTile-Slick-item img{
       border-top-left-radius: inherit;
     border-top-right-radius: inherit;
 }
 .simple-Slick-item{
+  cursor: pointer;
   padding:10px 0px;
   border-radius: 2px;
 }
@@ -105,4 +107,7 @@ transform: scale(1.03);
   font-size: 20px;
     line-height: 32px;
     font-weight: 500;
+}
+.pointer{
+  cursor: pointer;
 }

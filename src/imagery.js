@@ -17,7 +17,7 @@ class Imagery extends Component {
           <div className="row" style={{ margin: "0px 20px" }}>
             {images.map(image => {
               return (
-                <div className="col-xs imageryImg">
+                <div className="col-xs imageryImg pointer">
                   <img
                     height="300px"
                     width="100%"
