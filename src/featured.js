@@ -26,19 +26,19 @@ class SimpleSlider extends Component {
     </div>
   }
   render() {
-    const settings = {
+    let { images, siteURL, buttonLabel, sectionTitle,noOfProductsToShow } = this.props;
+    let settings = {
       infinite: true,
       speed: 200,
-      slidesToShow: 3,
-      slidesToScroll: 3
+      slidesToShow: noOfProductsToShow,
+      slidesToScroll: noOfProductsToShow
     };
-    let { images, siteURL, buttonLabel, sectionTitle } = this.props;
     let { expireTime} = this.state;
     return (
       <div>
         <h4></h4>
         <div className='row sliderparent'>
-          <div className='col-xs-3 vertMiddle center-xs'>
+          <div className='col-xs-2 vertMiddle center-xs'>
 
             <div className=''>
               <div className='featuredTitle'> {sectionTitle}</div>
@@ -50,7 +50,7 @@ class SimpleSlider extends Component {
               </div>
             </div>
           </div>
-          <div className='col-xs-9'>
+          <div className='col-xs-10'>
             <div className="row center-xs ">
               <div className="sliderDiv">
                 <Slider {...settings}>
