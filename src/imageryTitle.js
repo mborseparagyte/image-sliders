@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import ImageLoader from "./imageloader.js";
 class ImageryTitle extends Component {
   render() {
     const settings = {
@@ -19,11 +20,13 @@ class ImageryTitle extends Component {
             {images.map(image => {
               return (
                 <div className="col-xs imageryImg pointer">
-                  <img
-                    height="250px"
-                    width="100%"
-                    alt=""
-                    src={`${siteURL}/${image.image}`}
+                  <ImageLoader
+                    image={image.image}
+                    siteURL={siteURL}
+                    imageDimentions={{
+                      height: 250,
+                      width: "100%"
+                    }}
                   />
                 </div>
               );

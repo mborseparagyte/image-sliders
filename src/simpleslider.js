@@ -18,25 +18,21 @@ class SimpleSlider extends Component {
         <div className="row center-xs sliderparent containerDiv">
           <div className="sliderDiv">
             <Slider {...settings}>
-              {images.map(image => { 
-                return (
-                  <div className="simple-Slick-item">
-                    <ImageLoader 
-                      image = {image.image}
-                      siteURL={siteURL} 
-                    imageDimentions={{
-                      height: 400,
-                      width: "100%"
-                    }}/>
-                    {/*<img
-                      height="400px"
-                      width="100%"
-                      alt=""
-                      src={`${siteURL}/${image.image}`}
-                    />*/}
-                  </div>
-                );
-              })}
+              {images &&
+                images.map(image => {
+                  return (
+                    <div className="simple-Slick-item">
+                      <ImageLoader
+                        image={image.image}
+                        siteURL={siteURL}
+                        imageDimentions={{
+                          height: 400,
+                          width: "100%"
+                        }}
+                      />
+                    </div>
+                  );
+                })}
             </Slider>
           </div>
         </div>

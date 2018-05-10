@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import timediff from "timediff";
+import ImageLoader from "./imageloader.js";
 class SimpleSlider extends Component {
   constructor() {
     super();
@@ -24,11 +25,13 @@ class SimpleSlider extends Component {
     let { siteURL } = this.props;
     return (
       <div className="multiTile-Slick-item">
-        <img
-          height="150px"
-          width="100%"
-          alt=""
-          src={`${siteURL}/${product.image}`}
+        <ImageLoader
+          image={product.image}
+          siteURL={siteURL}
+          imageDimentions={{
+            height: 150,
+            width: "100%"
+          }}
         />
         <div className="productDesc">
           <div className="fea-product-title"> {product.title}</div>
