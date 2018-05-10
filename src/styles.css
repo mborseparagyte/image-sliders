@@ -2,7 +2,7 @@
   /* background: lightgray; */
 }
 .sliderDiv {
-  width: 80%;
+  width: 90%;
 }
 .multiTile-Slick-item{
   color: #2874f0;
@@ -80,4 +80,11 @@ font-size: 16px;
 }
 .productDesc{
   padding: 5px;
+}
+.imageryParent{
+  margin:0px 20px;
+}
+.imageryImg img{
+  border-radius: 2px;
+  box-shadow: 0 4px 5px 0 rgba(173, 173, 173, 0.67), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }

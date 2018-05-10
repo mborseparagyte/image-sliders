@@ -14,11 +14,11 @@ class Imagery extends Component {
       <div>
         <h4></h4>
         <div className="">
-          <div className="row">
+          <div className="row" style={{ margin:"0px 20px"}}>
               {images.map(image => {
                 return (
-                  <div className="col-xs">
-                    <img height="400px" width="100%" alt="" src={`${siteURL}/${image.image}`} />
+                  <div className="col-xs imageryImg">
+                    <img height="300px" width="100%" alt="" src={`${siteURL}/${image.image}`} />
                   </div>
                 );
               })}

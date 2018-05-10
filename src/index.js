@@ -22,12 +22,17 @@ const images = [
   { image: "images/slide_6.jpg", title: "Bath Furnishing Range", description: "From ₹149", category: "Towels, Bath Robes & more" },
   { image: "images/slide_7.jpg", title: "Wall Stickers ", description: "From ₹109", category: "Flipkart SmartBuy" }
   ],
+  imageryImages = [
+    { image: "images/slide_1.jpg", title: "Sparx, Stylar & more", description: "Upto 60+Extra 10% Off", category: "Slippers & Sandals" },
+    { image: "images/slide_2.jpg", title: "Puma, Adidas & more", description: "Under ₹1999+Extra 10%", category: "Men's Footwear" },
+    { image: "images/slide_3.jpg", title: "Aero, Kraasa & more", description: "Under ₹1499+Extra10% ", category: "Men's Shoes" },
+  ],
   siteURL = `https://react-slideshow.herokuapp.com`;
 //expireTime in ISO string
 const App = () => (
   <div style={styles}>
     <SimpleSlider images={images} siteURL={siteURL} />
-    <Imagery images={images} siteURL={siteURL}/>
+    <Imagery images={imageryImages} siteURL={siteURL}/>
     <Featured
       images={images}
       sectionTitle ={"Deals of the Day"}
