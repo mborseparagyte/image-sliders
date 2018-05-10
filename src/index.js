@@ -122,14 +122,14 @@ const App = () => (
         siteURL={siteURL}
         buttonLabel={"View All"}
         expireTime={"2018-05-10T12:28:03.000Z"}
-        noOfProductsToShow={6}
+        noOfProductsToShow={5}
       />
       <Trending
         sectionTitle={"Trending Offers"}
         images={images}
         siteURL={siteURL}
         buttonLabel={"View All"}
-        noOfProductsToShow={6}
+        noOfProductsToShow={5}
       />
     </div>
   </div>

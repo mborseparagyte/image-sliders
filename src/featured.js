@@ -39,7 +39,7 @@ class SimpleSlider extends Component {
     return (
       <div>
         <h4></h4>
-        <div className='row sliderparent'>
+        <div className='row containerDiv'>
           <div className='col-xs-2 vertMiddle center-xs'>
 
             <div className=''>

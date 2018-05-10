@@ -13,7 +13,7 @@ class Imagery extends Component {
     return (
       <div>
         <h4></h4>
-        <div className="">
+        <div className="containerDiv" style={{ margin: "0px -15px" }}>
           <div className="row" style={{ margin:"0px 20px"}}>
               {images.map(image => {
                 return (

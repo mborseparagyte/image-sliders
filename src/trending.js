@@ -7,9 +7,11 @@ class SimpleSlider extends Component {
     let { siteURL } = this.props;
     return <div className="multiTile-Slick-item">
       <img height="150px" width="100%" alt="" src={`${siteURL}/${product.image}`} />
-      <div className='fea-product-title'> {product.title}</div>
-      <div className='fea-product-desc'> {product.description}</div>
-      <div className='fea-product-category'> {product.category}</div>
+      <div className="productDesc">
+        <div className='fea-product-title'> {product.title}</div>
+        <div className='fea-product-desc'> {product.description}</div>
+        <div className='fea-product-category'> {product.category}</div>
+      </div>
     </div>
   }
   render() {
@@ -24,7 +26,7 @@ class SimpleSlider extends Component {
     return (
       <div>
         <h4></h4>
-        <div className='row sliderparent'>
+        <div className='row containerDiv'>
           <div className='col-xs-2 vertMiddle center-xs'>
             <div className=''>
               <div className='featuredTitle'> {sectionTitle}</div>

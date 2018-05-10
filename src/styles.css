@@ -1,5 +1,7 @@
-.sliderparent {
-  /* background: lightgray; */
+.containerDiv {
+  border: 1px solid #d3d3d385;
+  border-radius:2px;
+  padding:10px 0px
 }
 .sliderDiv {
   width: 90%;
@@ -95,7 +97,7 @@ transform: scale(1.05);
 transform: scale(1.03);
 }
 .imageryTitle{
-  padding: 10px 0px;
+  padding: 10px 20px;
   font-size: 20px;
     line-height: 32px;
     font-weight: 500;

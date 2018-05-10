@@ -13,7 +13,7 @@ class SimpleSlider extends Component {
     return (
       <div>
         <h4></h4>
-        <div className="row center-xs sliderparent">
+        <div className="row center-xs sliderparent containerDiv">
           <div className="sliderDiv">
             <Slider {...settings}>
               {images.map(image => {
