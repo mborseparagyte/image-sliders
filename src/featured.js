@@ -8,10 +8,10 @@ class SimpleSlider extends Component {
   }
   componentDidMount(){
     let { expireTime} = this.props;
-    setInterval(()=>{
-    let dateDiff = timediff(new Date(), new Date(expireTime));
-    this.setState({ expireTime: `${dateDiff.hours} : ${dateDiff.minutes} : ${dateDiff.seconds}` })
-    },1000)
+    // setInterval(()=>{
+    // let dateDiff = timediff(new Date(), new Date(expireTime));
+    // this.setState({ expireTime: `${dateDiff.hours} : ${dateDiff.minutes} : ${dateDiff.seconds}` })
+    // },1000)
   }
   getTimeRemail(expireTime) {
     return <div className="timeRemail">{expireTime}</div>
@@ -36,7 +36,7 @@ class SimpleSlider extends Component {
     let { expireTime} = this.state;
     return (
       <div>
-        <h4>Single Item</h4>
+        <h4></h4>
         <div className='row sliderparent'>
           <div className='col-xs-3 vertMiddle center-xs'>
 

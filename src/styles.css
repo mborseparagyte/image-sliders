@@ -1,13 +1,13 @@
 .sliderparent {
-  background: lightgray;
+  /* background: lightgray; */
 }
 .sliderDiv {
   width: 80%;
 }
 .multiTile-Slick-item{
   color: #2874f0;
-  height: 250px;
   padding:10px;
+    height: inherit;
 }
 .simple-Slick-item{
   padding:10px 0px;
@@ -47,4 +47,22 @@ font-size: 16px;
 .vertMiddle{
   display: flex;
     align-items: center;
+}
+.slick-slider button{
+  background: #6c757df2;
+  width: 22px;
+  height: 51px;
+  border-radius: 2px;
+}
+.slick-slider button:hover{
+  background: #6c757df2;
+  width: 22px;
+  height: 51px;
+  border-radius: 2px;
+}
+.slick-slider button:focus{
+  background: #6c757df2;
+  width: 22px;
+  height: 51px;
+  border-radius: 2px;
 }

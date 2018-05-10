@@ -22,7 +22,7 @@ class SimpleSlider extends Component {
     let { images, siteURL, buttonLabel, sectionTitle } = this.props;
     return (
       <div>
-        <h4>Single Item</h4>
+        <h4></h4>
         <div className='row sliderparent'>
           <div className='col-xs-3 vertMiddle center-xs'>
             <div className=''>
