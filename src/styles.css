@@ -94,3 +94,9 @@ transform: scale(1.05);
 .imageryImg img:hover{
 transform: scale(1.03);
 }
+.imageryTitle{
+  padding: 10px 0px;
+  font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+}

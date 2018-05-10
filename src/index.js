@@ -107,29 +107,31 @@ const images = [
   siteURL = `https://react-slideshow.herokuapp.com`;
 //expireTime in ISO string
 const App = () => (
-  <div style={styles}>
-    <SimpleSlider images={images} siteURL={siteURL} />
-    <Imagery images={imageryImages} siteURL={siteURL} />
-    <ImageryTitle
-      images={imageryTitleImages}
-      siteURL={siteURL}
-      sectionTitle={"Featured Brands"}
-    />
-    <Featured
-      images={images}
-      sectionTitle={"Deals of the Day"}
-      siteURL={siteURL}
-      buttonLabel={"View All"}
-      expireTime={"2018-05-10T12:28:03.000Z"}
-      noOfProductsToShow={6}
-    />
-    <Trending
-      sectionTitle={"Trending Offers"}
-      images={images}
-      siteURL={siteURL}
-      buttonLabel={"View All"}
-      noOfProductsToShow={6}
-    />
+  <div className="row center-xs">
+    <div className="col-xs-10" style={styles}>
+      <SimpleSlider images={images} siteURL={siteURL} />
+      <Imagery images={imageryImages} siteURL={siteURL} />
+      <ImageryTitle
+        images={imageryTitleImages}
+        siteURL={siteURL}
+        sectionTitle={"Featured Brands"}
+      />
+      <Featured
+        images={images}
+        sectionTitle={"Deals of the Day"}
+        siteURL={siteURL}
+        buttonLabel={"View All"}
+        expireTime={"2018-05-10T12:28:03.000Z"}
+        noOfProductsToShow={6}
+      />
+      <Trending
+        sectionTitle={"Trending Offers"}
+        images={images}
+        siteURL={siteURL}
+        buttonLabel={"View All"}
+        noOfProductsToShow={6}
+      />
+    </div>
   </div>
 );
 

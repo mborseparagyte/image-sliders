@@ -14,7 +14,7 @@ class ImageryTitle extends Component {
       <div>
         <h4></h4>
         <div className="">
-          <div className="start-xs">
+          <div className="start-xs imageryTitle" style={{ margin: "0px 20px" }}>
             {sectionTitle}
           </div>
           <div className="row" style={{ margin: "0px 20px" }}>
