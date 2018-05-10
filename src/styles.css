@@ -88,3 +88,9 @@ font-size: 16px;
   border-radius: 2px;
   box-shadow: 0 4px 5px 0 rgba(173, 173, 173, 0.67), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
+.multiTile-Slick-item:hover{
+transform: scale(1.05);
+}
+.imageryImg img:hover{
+transform: scale(1.03);
+}

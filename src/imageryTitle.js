@@ -9,13 +9,13 @@ class ImageryTitle extends Component {
       slidesToShow: 1,
       slidesToScroll: 1
     };
-    let { images, siteURL } = this.props;
+    let { images, siteURL, sectionTitle } = this.props;
     return (
       <div>
         <h4></h4>
         <div className="">
-          <div>
-          {"Imagery Title"}
+          <div className="start-xs">
+            {sectionTitle}
           </div>
           <div className="row" style={{ margin: "0px 20px" }}>
             {images.map(image => {
