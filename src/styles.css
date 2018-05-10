@@ -1,7 +1,11 @@
+body{
+  background-color: lightgray
+}
 .containerDiv {
   border: 1px solid #d3d3d385;
   border-radius:2px;
-  padding:10px 0px
+  padding:10px 0px;
+  background:white;
 }
 .sliderDiv {
   width: 90%;
