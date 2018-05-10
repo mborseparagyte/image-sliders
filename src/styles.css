@@ -76,19 +76,20 @@ font-size: 16px;
     align-items: center;
 }
 .slick-slider button{
-  background: #6c757df2;
+  background: #337ab8;
+  color:transparent;
   width: 22px;
   height: 51px;
   border-radius: 2px;
 }
 .slick-slider button:hover{
-  background: #6c757df2;
+  background: #337ab8;
   width: 22px;
   height: 51px;
   border-radius: 2px;
 }
 .slick-slider button:focus{
-  background: #6c757df2;
+  background: #337ab8;
   width: 22px;
   height: 51px;
   border-radius: 2px;
@@ -127,4 +128,7 @@ transform: scale(1.03);
     background-image: linear-gradient(to top, #a4789657, rgba(169, 112, 188, 0.05));
     border: 1px solid #d3d3d385;
     border-right: unset;
+}
+.slick-slider button{
+  color:white;
 }
