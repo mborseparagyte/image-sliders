@@ -12,16 +12,21 @@ class Imagery extends Component {
     let { images, siteURL } = this.props;
     return (
       <div>
-        <h4></h4>
+        <h4 />
         <div className="containerDiv" style={{ margin: "0px -15px" }}>
-          <div className="row" style={{ margin:"0px 20px"}}>
-              {images.map(image => {
-                return (
-                  <div className="col-xs imageryImg">
-                    <img height="300px" width="100%" alt="" src={`${siteURL}/${image.image}`} />
-                  </div>
-                );
-              })}
+          <div className="row" style={{ margin: "0px 20px" }}>
+            {images.map(image => {
+              return (
+                <div className="col-xs imageryImg">
+                  <img
+                    height="300px"
+                    width="100%"
+                    alt=""
+                    src={`${siteURL}/${image.image}`}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

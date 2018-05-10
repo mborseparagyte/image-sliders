@@ -1,22 +1,32 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 class SimpleSlider extends Component {
- 
-
   getItem(product) {
     let { siteURL } = this.props;
-    return <div className="multiTile-Slick-item">
-      <img height="150px" width="100%" alt="" src={`${siteURL}/${product.image}`} />
-      <div className="productDesc">
-        <div className='fea-product-title'> {product.title}</div>
-        <div className='fea-product-desc'> {product.description}</div>
-        <div className='fea-product-category'> {product.category}</div>
+    return (
+      <div className="multiTile-Slick-item">
+        <img
+          height="150px"
+          width="100%"
+          alt=""
+          src={`${siteURL}/${product.image}`}
+        />
+        <div className="productDesc">
+          <div className="fea-product-title"> {product.title}</div>
+          <div className="fea-product-desc"> {product.description}</div>
+          <div className="fea-product-category"> {product.category}</div>
+        </div>
       </div>
-    </div>
+    );
   }
   render() {
-    
-    let { images, siteURL, buttonLabel, sectionTitle, noOfProductsToShow } = this.props;
+    let {
+      images,
+      siteURL,
+      buttonLabel,
+      sectionTitle,
+      noOfProductsToShow
+    } = this.props;
     let settings = {
       infinite: true,
       speed: 200,
@@ -25,26 +35,24 @@ class SimpleSlider extends Component {
     };
     return (
       <div>
-        <h4></h4>
-        <div className='row containerDiv'>
-          <div className='col-xs-2 vertMiddle center-xs'>
-            <div className=''>
-              <div className='featuredTitle'> {sectionTitle}</div>
-              <div className=''>
-                <button type="button" class="btn btn-primary">{buttonLabel}</button>
+        <h4 />
+        <div className="row containerDiv">
+          <div className="col-xs-2 vertMiddle center-xs">
+            <div className="">
+              <div className="featuredTitle"> {sectionTitle}</div>
+              <div className="">
+                <button type="button" class="btn btn-primary">
+                  {buttonLabel}
+                </button>
               </div>
             </div>
           </div>
-          <div className='col-xs-10'>
+          <div className="col-xs-10">
             <div className="row center-xs ">
               <div className="sliderDiv">
                 <Slider {...settings}>
                   {images.map(image => {
-                    return (
-                      <div >
-                        {this.getItem(image)}
-                      </div>
-                    );
+                    return <div>{this.getItem(image)}</div>;
                   })}
                 </Slider>
               </div>

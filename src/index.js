@@ -107,7 +107,7 @@ const images = [
   siteURL = `https://react-slideshow.herokuapp.com`;
 //expireTime in ISO string
 const App = () => (
-  <div className="row center-xs" style={{ background:"#d3d3d345"}}>
+  <div className="row center-xs" style={{ background: "#d3d3d345" }}>
     <div className="col-xs-10" style={styles}>
       <SimpleSlider images={images} siteURL={siteURL} />
       <Imagery images={imageryImages} siteURL={siteURL} />

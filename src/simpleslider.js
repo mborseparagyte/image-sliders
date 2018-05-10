@@ -12,14 +12,19 @@ class SimpleSlider extends Component {
     let { images, siteURL } = this.props;
     return (
       <div>
-        <h4></h4>
+        <h4 />
         <div className="row center-xs sliderparent containerDiv">
           <div className="sliderDiv">
             <Slider {...settings}>
               {images.map(image => {
                 return (
                   <div className="simple-Slick-item">
-                    <img height="400px" width="100%" alt="" src={`${siteURL}/${image.image}`} />
+                    <img
+                      height="400px"
+                      width="100%"
+                      alt=""
+                      src={`${siteURL}/${image.image}`}
+                    />
                   </div>
                 );
               })}
