@@ -10,6 +10,8 @@
     "react-dom": "16.3.2",
     "react-image-slideshow": "1.5.4",
     "react-imageloader": "3.0.0",
+    "react-lazy-load": "3.0.13",
+    "react-lazyload": "2.3.0",
     "react-scripts": "1.1.4",
     "react-slick": "0.23.1",
     "slick-carousel": "1.8.1",

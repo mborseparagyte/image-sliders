@@ -39,8 +39,8 @@ class SimpleSlider extends Component {
     return (
       <div>
         <h4 />
-        <div className="row containerDiv">
-          <div className="col-xs-2 vertMiddle center-xs">
+        <div className="row ">
+          <div className="col-xs-2 vertMiddle center-xs sectionBackground">
             <div className="">
               <div className="featuredTitle"> {sectionTitle}</div>
               <div className="">
@@ -50,7 +50,7 @@ class SimpleSlider extends Component {
               </div>
             </div>
           </div>
-          <div className="col-xs-10">
+          <div className="col-xs-10 containerDivSpecial">
             <div className="row center-xs ">
               <div className="sliderDiv">
                 <Slider {...settings}>

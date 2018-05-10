@@ -7,6 +7,13 @@ body{
   padding:10px 0px;
   background:white;
 }
+.containerDivSpecial {
+  border: 1px solid #d3d3d385;
+  border-left:unset;
+  border-radius:2px;
+  padding:10px 0px;
+  background:white;
+}
 .sliderDiv {
   width: 90%;
 }
@@ -114,4 +121,10 @@ transform: scale(1.03);
 .imageloader img{
   height: 100%;
   width:100%;
+}
+.sectionBackground{
+  background-color: white;
+    background-image: linear-gradient(to top, #a4789657, rgba(169, 112, 188, 0.05));
+    border: 1px solid #d3d3d385;
+    border-right: unset;
 }
