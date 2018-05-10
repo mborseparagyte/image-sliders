@@ -8,6 +8,7 @@ import flexboxgrid from "flexboxgrid";
 import SimpleSlider from "./simpleslider.js";
 import Featured from "./featured.js";
 import Trending from "./trending.js";
+import Imagery from "./imagery.js";
 const styles = {
   fontFamily: "sans-serif",
   textAlign: "center"
@@ -26,6 +27,7 @@ const images = [
 const App = () => (
   <div style={styles}>
     <SimpleSlider images={images} siteURL={siteURL} />
+    <Imagery images={images} siteURL={siteURL}/>
     <Featured
       images={images}
       sectionTitle ={"Deals of the Day"}
