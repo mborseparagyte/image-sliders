@@ -121,7 +121,7 @@ const App = () => (
         sectionTitle={"Deals of the Day"}
         siteURL={siteURL}
         buttonLabel={"View All"}
-        expireTime={"2018-05-10T12:28:03.000Z"}
+        expireTime={"2018-05-15T05:24:25.000Z"}
         noOfProductsToShow={5}
       />
       <Trending

@@ -5,7 +5,7 @@ class SimpleSlider extends Component {
   render() {
     const settings = {
       infinite: true,
-      //autoplay: true,
+      autoplay: true,
       speed: 100,
       slidesToShow: 1,
       slidesToScroll: 1
